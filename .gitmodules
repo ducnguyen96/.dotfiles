@@ -6,4 +6,7 @@
 	url = git@github.com:ducnguyen96/st.git
 [submodule "dmenu"]
 	path = dmenu
-	url =git@github.com:ducnguyen96/dmenu.git
+	url = git@github.com:ducnguyen96/dmenu.git
+[submodule "yay"]
+	path = yay
+	url = https://aur.archlinux.org/yay.git

@@ -1,26 +1,61 @@
-1. install git
-sudo pacman -S git openssh
-2. install xorg
-sudo pacman -S xorg
-3. install build-essential
+## 1. Arch installation
+
+Follow this guide: https://wiki.archlinux.org/title/installation_guide
+
+### Android usb tethering
+
+```sh
+sudo pacman -Sy usbutils usbmodeswitch networkmanager dhclient
+ip link show
+ip link set interface up
+```
+
+### Add new user and add to wheel group
+
+```sh
+useradd -m d
+passwd d
+usermod -aG wheel d
+sudo nano /etc/sudoers
+```
+
+## 2. Install window manager
+
+```sh
+# install git
+sudo pacman -Sy git openssh
+```
+
+```sh
+# install xorg
+sudo pacman -S xorg xorg-xinit
+```
+
+```sh
+# build essentials
 sudo pacman -Sy base-devel libxft libxinerama
-4. install dwm
-git clone https://git.suckless.org/dwm
+```
+
+```sh
+# Pull latest changes for all sub modules
+git submodule update --init --recursive
 cd dwm && sudo make install
-5. install st
-git clone https://git.suckless.org/st
 cd st && sudo make install
-6. install dmenu
-git clone https://git.suckless.org/dmenu
-cd dmenu 
-7. install yay
+cd dmenu && sudo make install
+```
+
+## 3. Install utilities
+
+```sh
+# install yay
 cd yay && makepkg -si
-8. install brave
-yay -S brave-bin
-9. install zsh
+yay -Sy brave-bin visual-studio-code-bin
+```
+
+```sh
+# install zsh
 sudo pacman -Sy zsh zsh-completions
-ln -s .zshrc /homd/d/
-# invoke zsh-newuser-install by: 
-#$ autoload -Uz zsh-newuser-install
-#$ zsh-newuser-install -f
-chsh -s /usr/bin/zsh
+ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/
+ln -s $HOME/.dotfiles/.xinitrc $HOME/
+chsh -s /usr/bin/zsh # reboot might needed
+```
