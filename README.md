@@ -59,3 +59,8 @@ ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/
 ln -s $HOME/.dotfiles/.xinitrc $HOME/
 chsh -s /usr/bin/zsh # reboot might needed
 ```
+
+```sh
+# install ibus
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/BambooEngine/ibus-bamboo/master/archlinux/install.sh)"
+```
