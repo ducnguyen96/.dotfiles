@@ -64,3 +64,11 @@ chsh -s /usr/bin/zsh # reboot might needed
 # install ibus
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/BambooEngine/ibus-bamboo/master/archlinux/install.sh)"
 ```
+
+## 4. Others
+
+### 1. Enable tapping
+
+```sh
+sudo cp x/40-libinput.conf /etc/X11/xorg.conf.d
+```
