@@ -1,5 +1,5 @@
 1. install git
-sudo pacman -S git
+sudo pacman -S git openssh
 2. install xorg
 sudo pacman -S xorg
 3. install build-essential
