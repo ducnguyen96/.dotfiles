@@ -84,7 +84,7 @@ sudo systemctl enable docker.service
 
 ```sh
 # rsync curl
-sudo pacman -Sy rsync curl unzip feh
+sudo pacman -Sy rsync curl unzip feh fzf fontconfig
 ```
 
 ```sh
@@ -93,7 +93,15 @@ curl -fsSL https://fnm.vercel.app/install | zsh
 ```
 
 ```sh
-sudo pacman -Sy dbeaver
+sudo pacman -Sy dbeaver neovim
+```
+
+```sh
+# nerdfonts
+# deps: curl unzip fzf fontconfig
+git clone https://github.com/ronniedroid/getnf.git
+cd getnf
+./install.sh
 ```
 
 ## 4. Others
