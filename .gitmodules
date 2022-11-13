@@ -13,3 +13,6 @@ url = https://aur.archlinux.org/yay.git
 [submodule "dwmblocks"]
 path = dwmblocks
 url = git@github.com:ducnguyen96/dwmblocks.git
+[submodule "nvim-basic-ide"]
+path = nvim-basic-ide
+url = git@github.com:ducnguyen96/nvim-basic-ide.git
