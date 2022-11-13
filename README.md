@@ -70,6 +70,13 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/BambooEngine/ibus-bamboo
 sudo pacman -Sy alsa-utils pulseaudio pavucontrol
 ```
 
+```sh
+# docker
+sudo pacman -Sy docker docker-compose
+sudo usermod -aG docker $USER
+sudo systemctl enable docker.service
+```
+
 ## 4. Others
 
 ### 1. Enable tapping
