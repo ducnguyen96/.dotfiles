@@ -33,7 +33,7 @@ sudo pacman -S xorg xorg-xinit
 
 ```sh
 # build essentials
-sudo pacman -Sy base-devel libxft libxinerama
+sudo pacman -Sy base-devel libxft libxinerama picom
 ```
 
 ```sh
@@ -42,6 +42,11 @@ git submodule update --init --recursive
 cd dwm && sudo make install
 cd st && sudo make install
 cd dmenu && sudo make install
+```
+
+```sh
+# st transparent background
+picom &
 ```
 
 ## 3. Install utilities
@@ -79,7 +84,7 @@ sudo systemctl enable docker.service
 
 ```sh
 # rsync curl
-sudo pacman -Sy rsync curl unzip
+sudo pacman -Sy rsync curl unzip feh
 ```
 
 ```sh
