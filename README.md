@@ -49,7 +49,7 @@ cd dmenu && sudo make install
 ```sh
 # install yay
 cd yay && makepkg -si
-yay -Sy brave-bin visual-studio-code-bin
+yay -Sy brave-bin visual-studio-code-bin slack-desktop cloudflare-warp-bin
 ```
 
 ```sh
@@ -75,6 +75,20 @@ sudo pacman -Sy alsa-utils pulseaudio pavucontrol
 sudo pacman -Sy docker docker-compose
 sudo usermod -aG docker $USER
 sudo systemctl enable docker.service
+```
+
+```sh
+# rsync curl
+sudo pacman -Sy rsync curl unzip
+```
+
+```sh
+# fnm
+curl -fsSL https://fnm.vercel.app/install | zsh
+```
+
+```sh
+sudo pacman -Sy dbeaver
 ```
 
 ## 4. Others
