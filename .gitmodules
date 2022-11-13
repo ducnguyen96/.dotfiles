@@ -1,12 +1,15 @@
 [submodule "dwm"]
-	path = dwm
-	url = git@github.com:ducnguyen96/dwm.git
+path = dwm
+url = git@github.com:ducnguyen96/dwm.git
 [submodule "st"]
-	path = st
-	url = git@github.com:ducnguyen96/st.git
+path = st
+url = git@github.com:ducnguyen96/st.git
 [submodule "dmenu"]
-	path = dmenu
-	url = git@github.com:ducnguyen96/dmenu.git
+path = dmenu
+url = git@github.com:ducnguyen96/dmenu.git
 [submodule "yay"]
-	path = yay
-	url = https://aur.archlinux.org/yay.git
+path = yay
+url = https://aur.archlinux.org/yay.git
+[submodule "dwmblocks"]
+path = dwmblocks
+url = git@github.com:ducnguyen96/dwmblocks.git

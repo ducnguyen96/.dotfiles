@@ -1,1 +1,2 @@
+dwmblocks &
 exec dwm
