@@ -65,6 +65,11 @@ chsh -s /usr/bin/zsh # reboot might needed
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/BambooEngine/ibus-bamboo/master/archlinux/install.sh)"
 ```
 
+```sh
+# audio
+sudo pacman -Sy alsa-utils pulseaudio pavucontrol
+```
+
 ## 4. Others
 
 ### 1. Enable tapping
