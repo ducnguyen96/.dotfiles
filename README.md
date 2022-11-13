@@ -93,7 +93,7 @@ curl -fsSL https://fnm.vercel.app/install | zsh
 ```
 
 ```sh
-sudo pacman -Sy dbeaver neovim
+sudo pacman -Sy dbeaver neovim rust
 ```
 
 ```sh
