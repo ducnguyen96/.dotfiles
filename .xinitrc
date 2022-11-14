@@ -1,4 +1,4 @@
 dwmblocks &
-cd $HOME/.dotfiles && feh --bg-scale wallpaper.png &
+cd $HOME/.dotfiles && feh --bg-fill wallpaper.png &
 picom &
 exec dwm
